@@ -415,8 +415,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0024872, y: -157.2031}
-  m_SizeDelta: {x: -0.0050049, y: 314.4059}
+  m_AnchoredPosition: {x: 3.9298706, y: -290.90662}
+  m_SizeDelta: {x: -188.7626, y: 322.271}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &315339387
 MonoBehaviour:
@@ -440,8 +440,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "A Doce Fuga da Irm\xE3"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7cab175f9260a5747894aa5d05429801, type: 2}
+  m_sharedMaterial: {fileID: 3309962345957652538, guid: 7cab175f9260a5747894aa5d05429801,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -465,12 +466,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
+  m_fontSize: 134.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 100
+  m_fontSizeMax: 250
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 1024
