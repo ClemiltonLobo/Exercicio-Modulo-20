@@ -10,7 +10,11 @@ public class PauseManager : MonoBehaviour
 
     [Header("Painel de Pausa")]
     public GameObject pausePanel;
+    public GameObject TextPause;
+    public GameObject ButtonBackMenu;
+    public GameObject ButtonBackGame;
     public string sceneName;
+    public AudioSource ambienteAudioSource;
 
     public void TogglePause()
     {
@@ -20,11 +24,19 @@ public class PauseManager : MonoBehaviour
         {
             Time.timeScale = 0;
             pausePanel.SetActive(true);
+            TextPause.SetActive(true);
+            ButtonBackMenu.SetActive(true);
+            ButtonBackGame.SetActive(true);
+            ambienteAudioSource.Pause();
         }
         else
         {
             Time.timeScale = 1;
             pausePanel.SetActive(false);
+            TextPause.SetActive(false);
+            ButtonBackMenu.SetActive(false);
+            ButtonBackGame.SetActive(false);
+            ambienteAudioSource.UnPause();
         }
     }
 
