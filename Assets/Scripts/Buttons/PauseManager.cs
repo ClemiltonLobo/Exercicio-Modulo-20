@@ -6,17 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour
 {
-    private bool isPaused;
-    private float previousTimeScale;
+    private bool isPaused;    
 
     [Header("Painel de Pausa")]
     public GameObject pausePanel;
     public string sceneName;
-
-    private void Start()
-    {
-        Time.timeScale = 1f;
-    }
 
     public void TogglePause()
     {
@@ -24,13 +18,12 @@ public class PauseManager : MonoBehaviour
 
         if (isPaused)
         {
-            previousTimeScale = Time.timeScale;
-            Time.timeScale = 0f;
+            Time.timeScale = 0;
             pausePanel.SetActive(true);
         }
         else
         {
-            Time.timeScale = previousTimeScale;
+            Time.timeScale = 1;
             pausePanel.SetActive(false);
         }
     }
@@ -42,7 +35,6 @@ public class PauseManager : MonoBehaviour
 
     public void QuitToMenu()
     {
-        Time.timeScale = 1f;
         SceneManager.LoadScene(sceneName);
     }
 }
