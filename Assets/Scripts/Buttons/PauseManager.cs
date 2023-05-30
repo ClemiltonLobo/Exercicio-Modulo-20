@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour
 {
@@ -13,7 +12,7 @@ public class PauseManager : MonoBehaviour
     public GameObject TextPause;
     public GameObject ButtonBackMenu;
     public GameObject ButtonBackGame;
-    public string sceneName;
+    
     public AudioSource ambienteAudioSource;
 
     public void TogglePause()
@@ -43,10 +42,5 @@ public class PauseManager : MonoBehaviour
     public void Resume()
     {
         TogglePause();
-    }
-
-    public void QuitToMenu()
-    {
-        SceneManager.LoadScene(sceneName);
     }
 }

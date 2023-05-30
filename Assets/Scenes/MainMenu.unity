@@ -1468,6 +1468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 700257642}
   AudioSource: {fileID: 700257640}
+  triggerName: PopAnim_Play
 --- !u!82 &700257640
 AudioSource:
   m_ObjectHideFlags: 0

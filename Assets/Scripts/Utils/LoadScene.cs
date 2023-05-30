@@ -7,6 +7,7 @@ public class LoadScene : MonoBehaviour
 {
     public Animator animator;
     public AudioSource AudioSource;
+    public string triggerName;
 
     public void Load(int i)
     {
@@ -14,10 +15,10 @@ public class LoadScene : MonoBehaviour
         AudioSource.Play();
 
         // Ativar a animação "PopAnimPlay" antes de carregar a nova cena
-        animator.SetTrigger("PopAnimPlay");
+        animator.SetTrigger(triggerName);
 
         // Aguardar a duração da animação (ajuste o tempo de acordo com a animação)
-        float animDuration = GetAnimationDuration("PopAnimPlay");
+        float animDuration = GetAnimationDuration(triggerName);
         StartCoroutine(LoadSceneAfterDelay(i, animDuration));
     }
 
@@ -27,10 +28,10 @@ public class LoadScene : MonoBehaviour
         AudioSource.Play();
 
         // Ativar a animação "PopAnimPlay" antes de carregar a nova cena
-        animator.SetTrigger("PopAnimPlay");
+        animator.SetTrigger(triggerName);
 
         // Aguardar a duração da animação (ajuste o tempo de acordo com a animação)
-        float animDuration = GetAnimationDuration("PopAnimPlay");
+        float animDuration = GetAnimationDuration(triggerName);
         StartCoroutine(LoadSceneAfterDelay(s, animDuration));
     }
 
