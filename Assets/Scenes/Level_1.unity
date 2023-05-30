@@ -9780,7 +9780,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876147471}
-  m_LocalRotation: {x: -0.057563398, y: -2.6531693e-15, z: -8.240577e-17, w: 0.99834186}
+  m_LocalRotation: {x: -0.05756337, y: 0.00000002998445, z: 0.0000000017288725, w: 0.99834186}
   m_LocalPosition: {x: 21.69869, y: -28.999477, z: 60.9001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13022,7 +13022,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265194956}
-  m_LocalRotation: {x: -0.057563398, y: -2.6531693e-15, z: -8.240577e-17, w: 0.99834186}
+  m_LocalRotation: {x: -0.05756337, y: 0.00000002998445, z: 0.0000000017288725, w: 0.99834186}
   m_LocalPosition: {x: 21.69869, y: -28.999477, z: 60.9001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -19509,7 +19509,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1989369676
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20745,13 +20745,14 @@ GameObject:
   - component: {fileID: 2097724629}
   - component: {fileID: 2097724627}
   - component: {fileID: 2097724626}
+  - component: {fileID: 2097724632}
   m_Layer: 5
   m_Name: ButtonBackMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2097724625
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20972,6 +20973,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097724624}
   m_CullTransparentMesh: 1
+--- !u!114 &2097724632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097724624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 143f47f16b651414bbb06465e02306f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2097724626}
+  AudioSource: {fileID: 2097724627}
+  triggerName: PopMenu_AnimPop
 --- !u!1001 &2105578852
 PrefabInstance:
   m_ObjectHideFlags: 0
