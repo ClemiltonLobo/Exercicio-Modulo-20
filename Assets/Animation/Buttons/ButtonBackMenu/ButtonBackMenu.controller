@@ -36,7 +36,7 @@ AnimatorController:
   m_Name: ButtonBackMenu
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: PopAnimBackMenu
+  - m_Name: AnimPopMenu
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -90,7 +90,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: PopAnimBackMenu
+    m_ConditionEvent: AnimPopMenu
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3444206883107271188}
@@ -117,7 +117,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 3444206883107271188}
-    m_Position: {x: 230, y: 120, z: 0}
+    m_Position: {x: 270, y: 130, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5313531228769139874}
     m_Position: {x: 249.25284, y: -49.20056, z: 0}
