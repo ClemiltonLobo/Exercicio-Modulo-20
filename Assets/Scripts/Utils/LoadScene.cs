@@ -54,7 +54,16 @@ public class LoadScene : MonoBehaviour
     float GetAnimationDuration(string animationName)
     {
         AnimatorClipInfo[] clipInfo = animator.GetCurrentAnimatorClipInfo(0);
-        AnimationClip animClip = clipInfo[0].clip;
-        return animClip.length;
+
+        if (clipInfo.Length > 0)
+        {
+            AnimationClip animClip = clipInfo[0].clip;
+            return animClip.length;
+        }
+        else
+        {
+            Debug.LogWarning("AnimatorClipInfo array is empty.");
+            return 0f;
+        }
     }
 }
