@@ -11,7 +11,6 @@ public class PauseManager : MonoBehaviour
     public GameObject pausePanel;
     public GameObject TextPause;
     public GameObject ButtonBackMenu;
-    public GameObject ButtonBackGame;
     
     public AudioSource ambienteAudioSource;
 
@@ -24,8 +23,7 @@ public class PauseManager : MonoBehaviour
             Time.timeScale = 0;
             pausePanel.SetActive(true);
             TextPause.SetActive(true);
-            ButtonBackMenu.SetActive(true);
-            ButtonBackGame.SetActive(true);
+            ButtonBackMenu.SetActive(true);            
             ambienteAudioSource.Pause();
         }
         else
@@ -34,7 +32,6 @@ public class PauseManager : MonoBehaviour
             pausePanel.SetActive(false);
             TextPause.SetActive(false);
             ButtonBackMenu.SetActive(false);
-            ButtonBackGame.SetActive(false);
             ambienteAudioSource.UnPause();
         }
     }
